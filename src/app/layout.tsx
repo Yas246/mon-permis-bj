@@ -43,6 +43,26 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
+        <link rel="icon" href="/icons/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="72x72"
+          href="/icons/icon-72x72.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/icons/icon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icons/icon-192x192.png"
+        />
         <meta name="application-name" content="PermiX" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
