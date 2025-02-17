@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hors ligne - Mon Permis BJ</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f3f4f6;
+        color: #1f2937;
+      }
+      .container {
+        max-width: 600px;
+        text-align: center;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1f2937;
+      }
+      p {
+        color: #4b5563;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+      }
+      .icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .button {
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.2s;
+      }
+      .button:hover {
+        background-color: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1f2937;
+          color: #f3f4f6;
+        }
+        .container {
+          background-color: #374151;
+        }
+        h1 {
+          color: #f3f4f6;
+        }
+        p {
+          color: #d1d5db;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">📡</div>
+      <h1>Pas de connexion Internet</h1>
+      <p>
+        Vous êtes actuellement hors ligne. Certaines fonctionnalités de
+        l'application peuvent être limitées. Les données précédemment chargées
+        restent accessibles.
+      </p>
+      <a href="/" class="button">Retourner à l'accueil</a>
+    </div>
+  </body>
+</html>
