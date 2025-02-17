@@ -3,34 +3,53 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
+  reloadOnOnline: false,
+  scope: "/",
+  sw: "sw.js",
+  cacheId: "mon-permis-bj-v1",
+  dynamicStartUrl: false,
+  publicExcludes: ["!questions_reponses.json"],
+  buildExcludes: [/app-build-manifest.json$/],
+  fallbacks: {
+    document: false,
+    image: false,
+    audio: false,
+    video: false,
+    font: false,
+  },
   runtimeCaching: [
     {
-      urlPattern: ({ url, request }) => {
+      urlPattern: ({ url }) => {
         const isSameDomain = url.origin === self.location.origin;
-        const isHTML = request.destination === "document";
-        const isNavigate = request.mode === "navigate";
-        const isRoute =
-          url.pathname === "/" ||
-          url.pathname === "/examen" ||
-          url.pathname === "/revision" ||
-          url.pathname === "/historique" ||
-          url.pathname === "/sommaire";
-
-        return isSameDomain && (isHTML || isNavigate) && isRoute;
+        return isSameDomain;
       },
-      handler: "StaleWhileRevalidate",
+      handler: "CacheFirst",
       options: {
         cacheName: "pages-cache",
         expiration: {
-          maxEntries: 32,
-          maxAgeSeconds: 30 * 24 * 60 * 60,
-        },
-        cacheableResponse: {
-          statuses: [0, 200],
+          maxEntries: 50,
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
         },
         matchOptions: {
           ignoreSearch: true,
           ignoreVary: true,
+        },
+        cacheableResponse: {
+          statuses: [0, 200],
+        },
+      },
+    },
+    {
+      urlPattern: /\/questions_reponses\.json$/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "questions-data",
+        expiration: {
+          maxEntries: 1,
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+        },
+        cacheableResponse: {
+          statuses: [0, 200],
         },
       },
     },
@@ -39,50 +58,44 @@ const withPWA = require("next-pwa")({
         const isSameDomain = url.origin === self.location.origin;
         return (
           isSameDomain &&
-          (url.pathname.startsWith("/_next/data") ||
-            url.pathname.endsWith(".json") ||
-            url.searchParams.has("_rsc") ||
-            url.searchParams.has("__WB_REVISION__"))
+          (url.pathname.startsWith("/_next/") ||
+            url.pathname.startsWith("/static/"))
         );
       },
-      handler: "StaleWhileRevalidate",
-      options: {
-        cacheName: "next-data",
-        expiration: {
-          maxEntries: 64,
-          maxAgeSeconds: 30 * 24 * 60 * 60,
-        },
-        cacheableResponse: {
-          statuses: [0, 200],
-        },
-        matchOptions: {
-          ignoreVary: true,
-        },
-      },
-    },
-    {
-      urlPattern: /^https?.*/,
-      handler: "NetworkFirst",
-      options: {
-        cacheName: "offlineCache",
-        expiration: {
-          maxEntries: 200,
-          maxAgeSeconds: 24 * 60 * 60, // 24 heures
-        },
-        networkTimeoutSeconds: 10,
-        cacheableResponse: {
-          statuses: [0, 200],
-        },
-      },
-    },
-    {
-      urlPattern: /\.(js|css|png|jpg|jpeg|gif|svg|ico|webp)$/,
       handler: "CacheFirst",
       options: {
         cacheName: "static-resources",
         expiration: {
           maxEntries: 100,
-          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 jours
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+        },
+        cacheableResponse: {
+          statuses: [0, 200],
+        },
+      },
+    },
+    {
+      urlPattern: /\.(js|css|json)$/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "static-resources",
+        expiration: {
+          maxEntries: 50,
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+        },
+        cacheableResponse: {
+          statuses: [0, 200],
+        },
+      },
+    },
+    {
+      urlPattern: /\.(png|jpg|jpeg|gif|svg|ico|webp)$/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "static-assets",
+        expiration: {
+          maxEntries: 100,
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
         },
         cacheableResponse: {
           statuses: [0, 200],
@@ -95,31 +108,8 @@ const withPWA = require("next-pwa")({
       options: {
         cacheName: "google-fonts",
         expiration: {
-          maxEntries: 30,
-          maxAgeSeconds: 30 * 24 * 60 * 60, // 1 mois
-        },
-      },
-    },
-    {
-      urlPattern: /\/api\//,
-      handler: "NetworkFirst",
-      options: {
-        cacheName: "api-cache",
-        networkTimeoutSeconds: 10,
-        expiration: {
-          maxEntries: 50,
-          maxAgeSeconds: 24 * 60 * 60, // 24 heures
-        },
-      },
-    },
-    {
-      urlPattern: /\/questions_reponses\.json$/,
-      handler: "CacheFirst",
-      options: {
-        cacheName: "questions-data",
-        expiration: {
-          maxEntries: 1,
-          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 jours
+          maxEntries: 32,
+          maxAgeSeconds: 30 * 24 * 60 * 60,
         },
         cacheableResponse: {
           statuses: [0, 200],
@@ -127,12 +117,13 @@ const withPWA = require("next-pwa")({
       },
     },
   ],
-  buildExcludes: [/app-build-manifest.json$/],
 });
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    disableOptimizedLoading: true,
+  },
 };
 
 module.exports = withPWA(nextConfig);

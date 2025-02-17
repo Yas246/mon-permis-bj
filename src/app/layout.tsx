@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import Navbar from "../components/Navbar";
-import PWAUpdater from "../components/PWAUpdater";
-import ServiceWorkerRegistration from "../components/ServiceWorkerRegistration";
-import { ThemeProvider } from "../context/ThemeContext";
+import ClientLayout from "../components/ClientLayout";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -45,14 +42,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
       <body>
-        <ThemeProvider>
-          <div className="min-h-screen bg-white dark:bg-gray-900">
-            <Navbar />
-            <main className="container px-4 py-8 mx-auto">{children}</main>
-            <PWAUpdater />
-            <ServiceWorkerRegistration />
-          </div>
-        </ThemeProvider>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

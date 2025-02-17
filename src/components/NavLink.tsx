@@ -27,7 +27,6 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      prefetch={true}
       className={`${baseClasses} ${isActive ? activeClasses : ""} ${className}`}
       onClick={onClick}
     >

@@ -36,7 +36,7 @@ export default function Home() {
         ref={titleRef}
         className="mb-8 text-3xl font-bold text-center text-gray-800 md:text-4xl lg:text-5xl dark:text-white"
       >
-        Bienvenue sur Mon_permis.BJ
+        Bienvenue sur PermiX
       </h1>
 
       <div

@@ -87,7 +87,7 @@ function RevisionContent() {
     ) {
       timerRef.current = setTimeout(() => {
         goToNextQuestion();
-      }, 2000);
+      }, 1500);
     }
   };
 
@@ -104,14 +104,14 @@ function RevisionContent() {
   const showResult = !isTrainingMode || (isTrainingMode && hasCheckedAnswer);
 
   return (
-    <div className="container mx-auto px-4 py-6 max-w-3xl">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+    <div className="container px-4 py-6 mx-auto max-w-3xl">
+      <div className="flex flex-col gap-4 justify-between items-start mb-6 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-4 items-start sm:flex-row sm:items-center">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
             Mode Révision
           </h1>
           <label className="inline-flex items-center cursor-pointer">
-            <span className="mr-3 text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
+            <span className="mr-3 text-sm font-medium text-gray-700 whitespace-nowrap dark:text-gray-300">
               Mode entraînement
             </span>
             <div className="relative">
@@ -125,7 +125,7 @@ function RevisionContent() {
             </div>
           </label>
         </div>
-        <div className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
+        <div className="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
           Question {currentQuestionIndex + 1} / {typedQuestions.length}
         </div>
       </div>
@@ -137,22 +137,22 @@ function RevisionContent() {
         showResult={showResult}
       />
 
-      <div className="flex flex-col sm:flex-row justify-between gap-4 mt-6">
+      <div className="flex flex-col gap-4 justify-between mt-6 sm:flex-row">
         <button
           onClick={goToPreviousQuestion}
           disabled={currentQuestionIndex === 0}
-          className="btn-navigation order-2 sm:order-1 w-full sm:w-auto"
+          className="order-2 w-full btn-navigation sm:order-1 sm:w-auto"
         >
           Question précédente
         </button>
 
-        <div className="flex flex-col sm:flex-row gap-4 order-1 sm:order-2">
+        <div className="flex flex-col order-1 gap-4 sm:flex-row sm:order-2">
           {isTrainingMode &&
             currentUserAnswer.length > 0 &&
             !hasCheckedAnswer && (
               <button
                 onClick={checkAnswer}
-                className="px-6 py-2 font-semibold text-white bg-green-500 rounded-lg hover:bg-green-600 transition-colors w-full sm:w-auto"
+                className="px-6 py-2 w-full font-semibold text-white bg-green-500 rounded-lg transition-colors hover:bg-green-600 sm:w-auto"
               >
                 Vérifier
               </button>
@@ -160,7 +160,7 @@ function RevisionContent() {
           <button
             onClick={goToNextQuestion}
             disabled={currentQuestionIndex === typedQuestions.length - 1}
-            className="btn-navigation w-full sm:w-auto"
+            className="w-full btn-navigation sm:w-auto"
           >
             Question suivante
           </button>
