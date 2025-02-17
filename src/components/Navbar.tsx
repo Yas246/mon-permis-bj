@@ -15,9 +15,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900">
+      <div className="container px-4 mx-auto">
+        <div className="flex justify-between items-center h-16">
           <Link
             href="/"
             prefetch={true}
@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* Menu hamburger pour mobile */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="p-2 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700"
             aria-label="Menu"
           >
             <svg
@@ -50,11 +50,12 @@ export default function Navbar() {
           </button>
 
           {/* Menu pour desktop */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden items-center space-x-4 md:flex">
+            <NavLink href="/sommaire">Sommaire</NavLink>
             <NavLink href="/revision">Révision</NavLink>
             <NavLink href="/examen">Examen</NavLink>
             <NavLink href="/historique">Historique</NavLink>
-            <NavLink href="/sommaire">Sommaire</NavLink>
+
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -71,35 +72,35 @@ export default function Navbar() {
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
-              ? "max-h-48 opacity-100 py-2"
-              : "max-h-0 opacity-0 overflow-hidden"
+              ? "py-2 max-h-48 opacity-100"
+              : "overflow-hidden max-h-0 opacity-0"
           }`}
         >
           <div className="flex flex-col space-y-2">
             <NavLink
               href="/revision"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+              className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
               onClick={() => setIsMenuOpen(false)}
             >
               Révision
             </NavLink>
             <NavLink
               href="/examen"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+              className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
               onClick={() => setIsMenuOpen(false)}
             >
               Examen
             </NavLink>
             <NavLink
               href="/historique"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+              className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
               onClick={() => setIsMenuOpen(false)}
             >
               Historique
             </NavLink>
             <NavLink
               href="/sommaire"
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+              className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
               onClick={() => setIsMenuOpen(false)}
             >
               Sommaire
@@ -109,7 +110,7 @@ export default function Navbar() {
                 toggleTheme();
                 setIsMenuOpen(false);
               }}
-              className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+              className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               {mounted ? (
                 isDarkMode ? (
