@@ -1,12 +1,12 @@
 {
-  "name": "Mon Permis BJ",
-  "short_name": "MonPermis",
+  "name": "PermiX",
+  "short_name": "PermiX",
   "description": "Application d'apprentissage du code de la route au Bénin",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3b82f6",
-  "orientation": "portrait-primary",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "/icons/icon-72x72.png",

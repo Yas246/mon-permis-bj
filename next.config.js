@@ -6,7 +6,7 @@ const withPWA = require("next-pwa")({
   reloadOnOnline: false,
   scope: "/",
   sw: "sw.js",
-  cacheId: "mon-permis-bj-v1",
+  cacheId: "permix-v1",
   dynamicStartUrl: false,
   publicExcludes: ["!questions_reponses.json"],
   buildExcludes: [/app-build-manifest.json$/],
