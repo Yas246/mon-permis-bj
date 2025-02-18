@@ -1,5 +1,6 @@
 "use client";
 
+import gsap from "gsap";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useRef, useState } from "react";
 import questions from "../../../questions_reponses.json";
@@ -17,7 +18,71 @@ function RevisionContent() {
   const [userAnswers, setUserAnswers] = useState<Record<number, string[]>>({});
   const [isTrainingMode, setIsTrainingMode] = useState(false);
   const [hasCheckedAnswer, setHasCheckedAnswer] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const switchRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<NodeJS.Timeout>();
+  const tooltipTimerRef = useRef<NodeJS.Timeout>();
+
+  useEffect(() => {
+    // Vérifier si c'est la première visite
+    const hasSeenTooltip = localStorage.getItem("hasSeenTrainingModeTooltip");
+    if (!hasSeenTooltip) {
+      setShowTooltip(true);
+      localStorage.setItem("hasSeenTrainingModeTooltip", "true");
+
+      // Animation du switch
+      if (switchRef.current) {
+        // Animation initiale
+        gsap.set(switchRef.current, { scale: 0, rotation: 0 });
+
+        // Séquence d'animation
+        const tl = gsap.timeline();
+
+        tl.to(switchRef.current, {
+          scale: 1.2,
+          duration: 0.3,
+          ease: "back.out(1.7)",
+        })
+          .to(switchRef.current, {
+            scale: 1,
+            duration: 0.2,
+            ease: "power1.out",
+          })
+          .to(switchRef.current, {
+            rotation: -7,
+            duration: 0.05,
+            ease: "power1.inOut",
+          })
+          .to(switchRef.current, {
+            rotation: 7,
+            duration: 0.1,
+            ease: "power1.inOut",
+            repeat: 10,
+            yoyo: true,
+          })
+          .to(switchRef.current, {
+            rotation: 0,
+            duration: 0.1,
+            ease: "power1.inOut",
+          });
+      }
+    }
+  }, []);
+
+  // Gestion séparée du tooltip
+  useEffect(() => {
+    if (showTooltip) {
+      tooltipTimerRef.current = setTimeout(() => {
+        setShowTooltip(false);
+      }, 5000);
+
+      return () => {
+        if (tooltipTimerRef.current) {
+          clearTimeout(tooltipTimerRef.current);
+        }
+      };
+    }
+  }, [showTooltip]);
 
   useEffect(() => {
     const questionId = searchParams?.get("question");
@@ -69,6 +134,10 @@ function RevisionContent() {
   const handleModeChange = (checked: boolean) => {
     setIsTrainingMode(checked);
     setHasCheckedAnswer(false);
+    setShowTooltip(false);
+    if (tooltipTimerRef.current) {
+      clearTimeout(tooltipTimerRef.current);
+    }
   };
 
   const checkAnswer = () => {
@@ -110,20 +179,27 @@ function RevisionContent() {
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
             Mode Révision
           </h1>
-          <label className="inline-flex items-center cursor-pointer">
-            <span className="mr-3 text-sm font-medium text-gray-700 whitespace-nowrap dark:text-gray-300">
-              Mode entraînement
-            </span>
-            <div className="relative">
-              <input
-                type="checkbox"
-                className="sr-only peer"
-                checked={isTrainingMode}
-                onChange={(e) => handleModeChange(e.target.checked)}
-              />
-              <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-            </div>
-          </label>
+          <div className="flex relative items-center">
+            <label className="inline-flex items-center cursor-pointer">
+              <span className="mr-3 text-sm font-medium text-gray-700 whitespace-nowrap dark:text-gray-300">
+                Mode entraînement
+              </span>
+              <div className="relative" ref={switchRef}>
+                <input
+                  type="checkbox"
+                  className="sr-only peer"
+                  checked={isTrainingMode}
+                  onChange={(e) => handleModeChange(e.target.checked)}
+                />
+                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              </div>
+            </label>
+            {showTooltip && (
+              <div className="absolute right-0 left-0 -bottom-16 p-2 text-sm text-center text-white whitespace-normal bg-blue-600 rounded-lg shadow-lg dark:bg-blue-500 animate-fade-in sm:left-full sm:ml-4 sm:whitespace-nowrap sm:text-left sm:right-auto sm:bottom-auto sm:w-auto">
+                Masquez les réponses pour vous entraîner !
+              </div>
+            )}
+          </div>
         </div>
         <div className="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
           Question {currentQuestionIndex + 1} / {typedQuestions.length}

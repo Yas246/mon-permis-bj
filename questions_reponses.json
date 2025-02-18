@@ -233,7 +233,7 @@
         "content": "Aux véhicules prioritaires en mission "
       }
     ],
-    "answer": []
+    "answer": ["a", "c", "d"]
   },
   {
     "id": 13,
@@ -748,7 +748,7 @@
         "content": "Je dois rouler au moins à 30 km/h "
       }
     ],
-    "answer": []
+    "answer": ["b", "c"]
   },
   {
     "id": 38,
@@ -1305,7 +1305,7 @@
   },
   {
     "id": 65,
-    "question": "A la rencontre du panneau B3 3, il est interdit",
+    "question": "A la rencontre du panneau B33, il est interdit",
     "choices": [
       {
         "type": "text",
@@ -1324,7 +1324,7 @@
         "content": "A un véhicule poids lourd de croiser un véhicule léger "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 66,
@@ -1343,7 +1343,7 @@
         "content": "A plus de 50km/h "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 67,
@@ -1404,7 +1404,7 @@
         "content": "A plus de 30km/h "
       }
     ],
-    "answer": []
+    "answer": ["c", "d"]
   },
   {
     "id": 70,
@@ -1442,7 +1442,7 @@
         "content": "A plus de 50km/h "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 72,
@@ -1484,7 +1484,7 @@
   },
   {
     "id": 74,
-    "question": "Les feux t ricolores s’allument dans l’ordre suivant :",
+    "question": "Les feux tricolores s’allument dans l’ordre suivant :",
     "choices": [
       {
         "type": "text",
@@ -1499,7 +1499,7 @@
         "content": "Rouge-vert-jaune "
       }
     ],
-    "answer": []
+    "answer": ["a", "c"]
   },
   {
     "id": 75,
@@ -1545,7 +1545,7 @@
         "content": "Rouge-vert-jaune "
       }
     ],
-    "answer": []
+    "answer": ["a", "d"]
   },
   {
     "id": 77,
@@ -2218,7 +2218,7 @@
         "content": "de stationner après le panneau "
       }
     ],
-    "answer": []
+    "answer": ["c"]
   },
   {
     "id": 111,
@@ -2237,7 +2237,7 @@
         "content": "Délimitent la chaussée "
       }
     ],
-    "answer": []
+    "answer": ["b"]
   },
   {
     "id": 112,
@@ -2260,7 +2260,7 @@
         "content": "une interdiction de klaxonner "
       }
     ],
-    "answer": []
+    "answer": ["a", "c", "d"]
   },
   {
     "id": 113,
@@ -2283,11 +2283,11 @@
         "content": "de rouler à plus de 70km "
       }
     ],
-    "answer": []
+    "answer": ["a", "d"]
   },
   {
     "id": 114,
-    "question": "A la vue de ce panneau A 1c:",
+    "question": "A la vue de ce panneau A1c:",
     "choices": [
       {
         "type": "text",
@@ -2302,7 +2302,7 @@
         "content": "je dois réduire ma vitesse avant le premier virage pour diminuer les effets de la force centrifuge "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 115,
@@ -2428,7 +2428,7 @@
         "content": "D’intersection de routes de même nature "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 121,
@@ -2538,8 +2538,21 @@
   {
     "id": 128,
     "question": "Ce panneau (B1) indique que :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "L’accès est interdit à tous les véhicules "
+      },
+      {
+        "type": "text",
+        "content": "L’accès est interdit aux véhicules à moteur seulement "
+      },
+      {
+        "type": "text",
+        "content": "La rue en sens inverse est à sens unique "
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 129,
@@ -2556,236 +2569,774 @@
   {
     "id": 131,
     "question": "A la vue de ce panneau (B14) la limitation de vitesse concerne :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Tous les véhicules "
+      },
+      {
+        "type": "text",
+        "content": "pas tous les véhicules "
+      },
+      {
+        "type": "text",
+        "content": "elle commence à hauteur du panneau "
+      },
+      {
+        "type": "text",
+        "content": "elle commence après le panneau "
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 132,
     "question": "A la vue de ce panneau A15a1,",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "je peux rencontrer des animaux sauvages "
+      },
+      {
+        "type": "text",
+        "content": "je peux rencontrer des animaux domestiques "
+      },
+      {
+        "type": "text",
+        "content": "je ralentis "
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 133,
     "question": "A partir de ce panneau (B43), je peux rouler à :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "plus de 30 km/h"
+      },
+      {
+        "type": "text",
+        "content": "moins de 30 km/h "
+      },
+      {
+        "type": "text",
+        "content": "la vitesse voulue, en respectant la règlementation en vigueur "
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 134,
     "question": "Un panneau triangulaire indique :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "un danger "
+      },
+      {
+        "type": "text",
+        "content": "une obligation "
+      },
+      {
+        "type": "text",
+        "content": "une interdiction "
+      },
+      {
+        "type": "text",
+        "content": "une indication "
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 135,
     "question": "Un panneau rond bleu indique:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "une obligation"
+      },
+      {
+        "type": "text",
+        "content": "une interdiction"
+      },
+      {
+        "type": "text",
+        "content": "une fin d’obligation"
+      },
+      {
+        "type": "text",
+        "content": "une fin d’interdiction"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 136,
     "question": "Un panneau rond rouge est",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "une obligation"
+      },
+      {
+        "type": "text",
+        "content": "une interdiction"
+      },
+      {
+        "type": "text",
+        "content": "une fin d’interdiction"
+      },
+      {
+        "type": "text",
+        "content": "une indication"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 137,
     "question": "Ce panneau (AK5):",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "est permanent"
+      },
+      {
+        "type": "text",
+        "content": "est temporaire"
+      },
+      {
+        "type": "text",
+        "content": "impose un ralentissement"
+      },
+      {
+        "type": "text",
+        "content": "n’impose pas un ralentissement"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 138,
     "question": "Ce panneau (A1d) indique :",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "deux ou trois virages maximum"
+      },
+      {
+        "type": "text",
+        "content": "plusieurs virages"
+      },
+      {
+        "type": "text",
+        "content": "un virage"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 139,
     "question": "A la vue du panneau B21c2, que faire à la prochaine intersection ?",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "je peux tourner à gauche"
+      },
+      {
+        "type": "text",
+        "content": "je dois tourner à gauche"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 140,
     "question": "Avec un panneau rond rouge, l’interdiction commence :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "à hauteur du panneau"
+      },
+      {
+        "type": "text",
+        "content": "à 150m du panneau"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 141,
     "question": "Ce panneau (AK5) annonce des travaux :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "oui"
+      },
+      {
+        "type": "text",
+        "content": "non"
+      },
+      {
+        "type": "text",
+        "content": "c’est un signal avancé"
+      },
+      {
+        "type": "text",
+        "content": "c’est un signal de position"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 142,
     "question": "Ce panneau indique :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "que le premier virage est à 150m"
+      },
+      {
+        "type": "text",
+        "content": "plusieurs virages à 500m"
+      },
+      {
+        "type": "text",
+        "content": "plusieurs virages sur 500m"
+      },
+      {
+        "type": "text",
+        "content": "Un ralentissement"
+      }
+    ],
+    "answer": ["b", "d"]
   },
   {
     "id": 143,
     "question": "Ce signal annonce :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "un danger particulier"
+      },
+      {
+        "type": "text",
+        "content": "la pluie"
+      },
+      {
+        "type": "text",
+        "content": "que je dois ralentir et passer"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 144,
     "question": "Les itinéraires de délestage permettent :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "D’éviter les bouchons"
+      },
+      {
+        "type": "text",
+        "content": "De faciliter la circulation"
+      },
+      {
+        "type": "text",
+        "content": "D’éviter les contrôles routiers"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 145,
     "question": "Les itinéraires de délestages sont",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Obligatoires"
+      },
+      {
+        "type": "text",
+        "content": "Facultatifs"
+      },
+      {
+        "type": "text",
+        "content": "Rien de tout ce qui précède"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 146,
     "question": "Les balises qui positionnent un virage sont :",
     "choices": [],
-    "answer": []
+    "answer": ["a", "d"]
   },
   {
     "id": 147,
     "question": "On appelle indices « informels », les informations données :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "par la signalisation"
+      },
+      {
+        "type": "text",
+        "content": "par l’environnement en général"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 148,
     "question": "Ce panneau B6a1-1 indique que le stationnement est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Limité à 1h30, payant"
+      },
+      {
+        "type": "text",
+        "content": "Gratuit, à durée limitée"
+      },
+      {
+        "type": "text",
+        "content": "Payant, à durée illimitée"
+      },
+      {
+        "type": "text",
+        "content": "Payant, à durée limitée"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 149,
     "question": "A cette image Im1 P64, sur la ligne brisée à bord de ce véhicule, je peux :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "m’arrêter"
+      },
+      {
+        "type": "text",
+        "content": "stationner"
+      },
+      {
+        "type": "text",
+        "content": "circuler"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 150,
     "question": "Les lignes brisées sur une chaussée servent à :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "La circulation des bus"
+      },
+      {
+        "type": "text",
+        "content": "L’arrêt des bus"
+      },
+      {
+        "type": "text",
+        "content": "Le stationnement des bus"
+      },
+      {
+        "type": "text",
+        "content": "L’arrêt des camions"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 151,
     "question": "Sur cette image Im2 P64, la ligne jaune discontinue en bordure du trottoir :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Interdit l’arrêt"
+      },
+      {
+        "type": "text",
+        "content": "Autorise l’arrêt"
+      },
+      {
+        "type": "text",
+        "content": "Interdit le stationnement"
+      },
+      {
+        "type": "text",
+        "content": "Autorise le stationnement"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 152,
     "question": "Sur cette image Im2 P64 à bord de ce véhicule, je peux",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "m’arrêter"
+      },
+      {
+        "type": "text",
+        "content": "stationner"
+      },
+      {
+        "type": "text",
+        "content": "circuler"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 153,
     "question": "Sur cette image Im3 P64 à bord de ce véhicule je peux :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "avancer à la limite de la ligne transversale"
+      },
+      {
+        "type": "text",
+        "content": "avancer à la limite de la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "Franchir la ligne transversale"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 154,
     "question": "Sur cette image Im4 P64 à bord de ce véhicule je peux:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "m’arrêter à la limite de la ligne transversale"
+      },
+      {
+        "type": "text",
+        "content": "franchir la ligne transversale avant de céder le passage"
+      },
+      {
+        "type": "text",
+        "content": "franchir la ligne transversale en l’absence de tout véhicule"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 155,
     "question": "Sur cette image Im4 P64 à bord de ce véhicule, je peux :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "m’arrêter immédiatement"
+      },
+      {
+        "type": "text",
+        "content": "avancer à la limite de la ligne transversale"
+      },
+      {
+        "type": "text",
+        "content": "avancer à la limite de la chaussée abordée"
+      },
+      {
+        "type": "text",
+        "content": "franchir la ligne transversale"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 156,
     "question": "En présence d’un marquage jaune et d’un marquage blanc, je respecte :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le marquage jaune"
+      },
+      {
+        "type": "text",
+        "content": "Le marquage blanc"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 157,
     "question": "Les lignes de rive sur une route à double sens et sur autoroute sont identiques :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "A gauche"
+      },
+      {
+        "type": "text",
+        "content": "A droite"
+      },
+      {
+        "type": "text",
+        "content": "Rien de tout ce qui précède"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 158,
     "question": "Un panneau de zone de stationnement placé sur le même support qu’un panneau d’entré d’agglomération peut concerner :37",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Plusieurs rues"
+      },
+      {
+        "type": "text",
+        "content": "Une seule rue"
+      },
+      {
+        "type": "text",
+        "content": "Toutes les rues de l’agglomération"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 159,
     "question": "En présence d’un panneau stop, je dois :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Marquer l’arrêt au niveau du panneau"
+      },
+      {
+        "type": "text",
+        "content": "Marquer l’arrêt au niveau de la ligne"
+      },
+      {
+        "type": "text",
+        "content": "Céder le passage à gauche"
+      },
+      {
+        "type": "text",
+        "content": "Céder le passage à droite"
+      }
+    ],
+    "answer": ["b", "c", "d"]
   },
   {
     "id": 160,
     "question": "Ce panneau (B 22a) indique une voie réservée :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "aux cycles uniquement"
+      },
+      {
+        "type": "text",
+        "content": "aux cyclistes et cyclomotoristes"
+      },
+      {
+        "type": "text",
+        "content": "à tous les véhicules"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 161,
     "question": "L’interdiction de tourner à droite concerne :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "tous les véhicules"
+      },
+      {
+        "type": "text",
+        "content": "tous les véhicules affectés au transport de marchandises de plus de 6T"
+      },
+      {
+        "type": "text",
+        "content": "les véhicules affectés au transport de marchandises dont le PTAC est supérieur à 3,5T"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 162,
     "question": "La limitation de vitesse:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "commence à la hauteur du panneau"
+      },
+      {
+        "type": "text",
+        "content": "commence à 150m du panneau"
+      },
+      {
+        "type": "text",
+        "content": "commence à 50m du panneau"
+      },
+      {
+        "type": "text",
+        "content": "concerne tous les véhicules"
+      }
+    ],
+    "answer": ["a", "d"]
   },
   {
     "id": 163,
     "question": "Ce panneau (AK4) indique une chaussée glissante",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "temporaire"
+      },
+      {
+        "type": "text",
+        "content": "permanente"
+      },
+      {
+        "type": "text",
+        "content": "concerne tous les véhicules"
+      },
+      {
+        "type": "text",
+        "content": "il faut ralentir"
+      }
+    ],
+    "answer": ["a", "c", "d"]
   },
   {
     "id": 164,
     "question": "La limitation de vitesse:",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "commence au panneau"
+      },
+      {
+        "type": "text",
+        "content": "commence à 300 mètres"
+      },
+      {
+        "type": "text",
+        "content": "s’étend sur 300 mètres"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 165,
     "question": "Une voie de la chaussée réservée aux cyclistes ou aux cyclomotoristes est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "une piste cyclable"
+      },
+      {
+        "type": "text",
+        "content": "une bande cyclable"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 166,
     "question": "Le franchissement ou le chevauchement d’une ligne continue :",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "est autorisé lors d’un changement de direction"
+      },
+      {
+        "type": "text",
+        "content": "est autorisé pour dépasser un deux – roues"
+      },
+      {
+        "type": "text",
+        "content": "est toujours interdit"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 167,
     "question": "Lorsque les panneaux de direction ont un fond jaune, il s’agit :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "d’indication de direction provisoire"
+      },
+      {
+        "type": "text",
+        "content": "d’itinéraires prioritaires"
+      },
+      {
+        "type": "text",
+        "content": "d’indication urgente"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 168,
     "question": "Ce panneau A18 :",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "signale une circulation alternée"
+      },
+      {
+        "type": "text",
+        "content": "signale une circulation dans les deux sens"
+      },
+      {
+        "type": "text",
+        "content": "prend effet à 150 mètres environ"
+      },
+      {
+        "type": "text",
+        "content": "prend effet à partir du panneau"
+      }
+    ],
+    "answer": ["b", "d"]
   },
   {
     "id": 169,
     "question": "Ce panneau A 13a indique :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "la proximité d’une école"
+      },
+      {
+        "type": "text",
+        "content": "un endroit fréquenté par les enfants"
+      },
+      {
+        "type": "text",
+        "content": "un terrain de jeu"
+      },
+      {
+        "type": "text",
+        "content": "un marché"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 170,
@@ -2846,7 +3397,7 @@
         "content": "L’arrêt pour les véhicules légers seulement "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 173,
@@ -2934,27 +3485,91 @@
   },
   {
     "id": 177,
-    "question": "A un feu tricolore, l’apparition de la flèche jaune clignotante, orientée vers la droite autorise les",
-    "choices": [],
-    "answer": []
+    "question": "A un feu tricolore, l’apparition de la flèche jaune clignotante, orientée vers la droite autorise les véhicules à tourner malgré le feu rouge, dans la voie située immédiatement à droite ; pour cela il faut :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "se tourner de la file de droite"
+      },
+      {
+        "type": "text",
+        "content": "manoeuvrer au ralentir"
+      },
+      {
+        "type": "text",
+        "content": "céder le passage aux piétons"
+      },
+      {
+        "type": "text",
+        "content": "céder le passage aux usagers venant de la gauche et ne pas gêner ceux venant de droite"
+      }
+    ],
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 178,
     "question": "Une bande sonore sur la chaussée est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "une ligne longitudinale constituée de plots délimitant les voies de circulation"
+      },
+      {
+        "type": "text",
+        "content": "une ligne uniquement réflectorisée"
+      },
+      {
+        "type": "text",
+        "content": "une ligne continue"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 179,
     "question": "Les bandes sonores sur la chaussée servent :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "à alerter le conducteur qui s’écarte de sa trajectoire"
+      },
+      {
+        "type": "text",
+        "content": "à rompre la monotonie"
+      },
+      {
+        "type": "text",
+        "content": "à accélérer l’apparition des signes de fatigue"
+      },
+      {
+        "type": "text",
+        "content": "à sortir le conducteur de se tromper"
+      }
+    ],
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 180,
     "question": "Ce panneau signale :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "une voie de détresse"
+      },
+      {
+        "type": "text",
+        "content": "une rue à sens unique"
+      },
+      {
+        "type": "text",
+        "content": "une voie sans issue"
+      },
+      {
+        "type": "text",
+        "content": "un parc de stationnement"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 181,
@@ -3214,7 +3829,16 @@
   {
     "id": 194,
     "question": "A cette intersection I14, quel doit être l’ordre de passage des véhicules?",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "a) 1. le véhicule bleu démarre, fait ¼ de tour et s’arrête 2. le véhicule rouge passe ensuite 3. le véhicule jaune passe 4. le véhicule bleu après"
+      },
+      {
+        "type": "text",
+        "content": "b) 1. le véhicule bleu démarre, fait ¼ de tour et s’arrête 2. le véhicule jaune passe, 3. le véhicule rouge passe ensuite 4. le véhicule bleu passe après"
+      }
+    ],
     "answer": ["b"]
   },
   {
@@ -3407,7 +4031,16 @@
   {
     "id": 204,
     "question": "A cette intersection I8, quel doit être l’ordre de passage des véhicules ?",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "a) 1. les véhicules, jaune, bleu et la moto passent simultanément 2. le véhicule rouge passe après"
+      },
+      {
+        "type": "text",
+        "content": "b) 1. les véhicules jaune et bleu passent 2. le véhicule rouge passe"
+      }
+    ],
     "answer": ["b"]
   },
   {
@@ -3868,7 +4501,7 @@
         "content": "Lorsque je suis sur le point d’être dépassé "
       }
     ],
-    "answer": []
+    "answer": ["b", "c", "d"]
   },
   {
     "id": 229,
@@ -4490,15 +5123,15 @@
         "content": "Le véhicule vert effectue une mauvaise manœuvre "
       }
     ],
-    "answer": []
+    "answer": ["b", "c"]
   },
   {
     "id": 259,
-    "question": "65",
+    "question": "Sur cette chaussée D13 à quatre voies et à double sens de circulation,",
     "choices": [
       {
         "type": "text",
-        "content": "Le véhi cule vert n’est pas en infraction "
+        "content": "Le véhicule vert n’est pas en infraction "
       },
       {
         "type": "text",
@@ -4513,7 +5146,7 @@
         "content": "Le véhicule vert est en infraction "
       }
     ],
-    "answer": []
+    "answer": ["c", "d"]
   },
   {
     "id": 260,
@@ -4579,10 +5212,10 @@
       },
       {
         "type": "text",
-        "content": "Le véhic ule jaune n’est pas en infraction "
+        "content": "Le véhicule jaune n’est pas en infraction "
       }
     ],
-    "answer": []
+    "answer": ["b", "d"]
   },
   {
     "id": 263,
@@ -4594,7 +5227,7 @@
       },
       {
         "type": "text",
-        "content": "Le v éhicule bleu n’est pas en infraction "
+        "content": "Le véhicule bleu n’est pas en infraction "
       },
       {
         "type": "text",
@@ -4605,7 +5238,7 @@
         "content": "Le véhicule bleu effectue une mauvaise manœuvre "
       }
     ],
-    "answer": []
+    "answer": ["b", "c"]
   },
   {
     "id": 264,
@@ -5029,7 +5662,7 @@
         "content": "tous les kilomètres "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 284,
@@ -5075,7 +5708,7 @@
         "content": "permettre le stationnement des véhicules "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 286,
@@ -5094,115 +5727,385 @@
         "content": "des écarts sans avertir, sans contrôler "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 287,
     "question": "A cette intersection Im4 ; P55, l’usage r se trouvant dans la voie du milieu peut :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "tourner à droite"
+      },
+      {
+        "type": "text",
+        "content": "tourner à gauche"
+      },
+      {
+        "type": "text",
+        "content": "continuer tout droit"
+      }
+    ],
     "answer": ["c"]
   },
   {
     "id": 288,
     "question": "A cette intersection (Im5 ; P55) le véhicule bleu passe :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "avant le véhicule blanc"
+      },
+      {
+        "type": "text",
+        "content": "après le véhicule blanc"
+      },
+      {
+        "type": "text",
+        "content": "le dernier"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 289,
     "question": "A cette intersection (Im6 ; P65) quel est le véhicule qui passe le premier ?",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "avant le véhicule blanc"
+      },
+      {
+        "type": "text",
+        "content": "après le véhicule blanc"
+      },
+      {
+        "type": "text",
+        "content": "le dernier"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 290,
     "question": "A cette intersection Im7 ; P65, quel est le véhicule qui peut passer immédiatement ?",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "le bleu"
+      },
+      {
+        "type": "text",
+        "content": "le jaune"
+      },
+      {
+        "type": "text",
+        "content": "le vert"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 291,
     "question": "A cette intersection Im8 P55 le véhicule vert peut :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "tourner immédiatement à droit"
+      },
+      {
+        "type": "text",
+        "content": "continuer tout droit"
+      },
+      {
+        "type": "text",
+        "content": "ne peut tourner immédiatement à droite"
+      }
+    ],
     "answer": ["c"]
   },
   {
     "id": 292,
     "question": "Pour me rabattre à droite après un dépassement, j’attends :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "De ne plus voir le véhicule par la vitre latérale droite"
+      },
+      {
+        "type": "text",
+        "content": "De voir le véhicule dans mon rétroviseur droit"
+      },
+      {
+        "type": "text",
+        "content": "De voir le véhicule dans mon rétroviseur intérieur"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 293,
     "question": "A l’approche d’une intersection, sur une route à caractère prioritaire :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "je peux dépasser un véhicule"
+      },
+      {
+        "type": "text",
+        "content": "je ne peux pas dépasser un véhicule"
+      },
+      {
+        "type": "text",
+        "content": "je ne peux pas dépasser lorsqu’il y a un marquage au sol l’interdisant"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 294,
     "question": "Je suis sur une route à caractère prioritaire, si je n’ai pas à céder le passage :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "à droite aux intersections"
+      },
+      {
+        "type": "text",
+        "content": "à gauche aux intersections"
+      },
+      {
+        "type": "text",
+        "content": "à la prochaine intersection seulement"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 295,
     "question": "Pour ma sécurité et celle des autres, je dois circuler :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "à droite dans ma voie"
+      },
+      {
+        "type": "text",
+        "content": "au centre de ma voie"
+      },
+      {
+        "type": "text",
+        "content": "à gauche dans ma voie"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 296,
     "question": "Dans un croisement à l’indonésienne, les véhicules se croisent :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "par la droite"
+      },
+      {
+        "type": "text",
+        "content": "par la gauche"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 297,
     "question": "A une intersection sans signalisation, je dois céder le passage :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "à gauche seulement"
+      },
+      {
+        "type": "text",
+        "content": "à droite seulement"
+      },
+      {
+        "type": "text",
+        "content": "à droite et à gauche"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 298,
     "question": "En montagne, sur une route étroite, celui qui doit s’arrêter est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le véhicule qui monte"
+      },
+      {
+        "type": "text",
+        "content": "Le véhicule qui descend"
+      },
+      {
+        "type": "text",
+        "content": "Le véhicule le plus chargé"
+      },
+      {
+        "type": "text",
+        "content": "Le véhicule le moins chargé"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 299,
     "question": "Dans une longue et forte descente :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Je Freine en permanence pour ne pas prendre de vitesse"
+      },
+      {
+        "type": "text",
+        "content": "Je freine au début pour rétrograder et utiliser le frein moteur"
+      },
+      {
+        "type": "text",
+        "content": "Dans des lignes droites, je mets le levier de vitesse au point mort pour consommer moins de carburant"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 300,
     "question": "Donnez la règle à appliquer et l’ordre de passage des véhicules :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "rouge, bleu, jaune"
+      },
+      {
+        "type": "text",
+        "content": "bleu, jaune, rouge"
+      }
+    ],
+    "answer": ["c", "d"]
   },
   {
     "id": 301,
     "question": "Sur cette image Im2 P47, donnez les règles à appliquer et l’ordre de pas sage des véhicules",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "jaune et bleu simultanément puis rouge"
+      },
+      {
+        "type": "text",
+        "content": "rouge, jaune, bleu"
+      }
+    ],
+    "answer": ["b", "c", "d"]
   },
   {
     "id": 302,
     "question": "Sur cette image Im3 P47, donnez les règles à appliquer et l’ordre de passage des véhicules",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "jaune, bleu, rouge"
+      }
+    ],
+    "answer": ["a", "d"]
   },
   {
     "id": 303,
     "question": "Sur cette image Im4 P47, donnez les règles à appliquer et l’ordre de passage des véhicules",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "courtoisie"
+      },
+      {
+        "type": "text",
+        "content": "jaune et rouge simultanément puis bleu et blanc après"
+      },
+      {
+        "type": "text",
+        "content": "Bleu et blanc simultanément puis rouge et jaune après"
+      }
+    ],
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 304,
     "question": "Sur cette image Im5 P47, donnez les règles à appliquer et l’ordre de passage des véhicules",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "bleue, rouge, jaune"
+      },
+      {
+        "type": "text",
+        "content": "bleu et jaune simultanément puis rouge après"
+      }
+    ],
+    "answer": ["a", "b", "e"]
   },
   {
     "id": 305,
@@ -5213,14 +6116,56 @@
   {
     "id": 306,
     "question": "Sur cette image Im7 P47, donnez les règles à appliquer et l’ordre de passage des véhicules",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "rouge d’abord, puis bleu et jaune après"
+      },
+      {
+        "type": "text",
+        "content": "bleu, rouge et jaune"
+      }
+    ],
+    "answer": ["b", "c", "d"]
   },
   {
     "id": 307,
     "question": "Sur cette image Im1 P49, choisissez le panneau manquant parmi les panneaux proposés",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "perte de priorité"
+      },
+      {
+        "type": "text",
+        "content": "priorité de passage"
+      },
+      {
+        "type": "text",
+        "content": "la priorité à droite"
+      },
+      {
+        "type": "text",
+        "content": "bleu, jaune, rouge"
+      },
+      {
+        "type": "text",
+        "content": "bleu et rouge simultanément, puis jaune après"
+      }
+    ],
+    "answer": ["a", "b", "e"]
   },
   {
     "id": 308,
@@ -5267,8 +6212,25 @@
   {
     "id": 315,
     "question": "Sur cette image Im N°1 P60:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "nous sommes en présence d’une ligne d’avertissement"
+      },
+      {
+        "type": "text",
+        "content": "le véhicule bleu peut dépasser"
+      },
+      {
+        "type": "text",
+        "content": "le véhicule rouge peut s’arrêter sur la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "la ligne de rive peut être franchie"
+      }
+    ],
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 316,
@@ -5372,7 +6334,7 @@
         "content": "Le conducteur est à bord du véhicule "
       }
     ],
-    "answer": []
+    "answer": ["a", "c"]
   },
   {
     "id": 324,
@@ -5395,7 +6357,7 @@
         "content": "A l’immobilisation de longue durée d’un véhicule "
       }
     ],
-    "answer": []
+    "answer": ["c", "d"]
   },
   {
     "id": 325,
@@ -5502,7 +6464,7 @@
         "content": "le blocage des roues "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 330,
@@ -5545,10 +6507,10 @@
       },
       {
         "type": "text",
-        "content": "de l’état des amortisseurs 87 "
+        "content": "de l’état des amortisseurs "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 332,
@@ -5567,7 +6529,7 @@
         "content": "klaxonner pour faire dégager les piétons engagés sur leur passage "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 333,
@@ -5645,146 +6607,458 @@
   {
     "id": 336,
     "question": "Un vent latéral violent est particulièrement dangereux :",
-    "choices": [],
-    "answer": ["c"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "lorsqu’il souffle par rafales"
+      },
+      {
+        "type": "text",
+        "content": "lors du passage de zones ventées en zones abritées"
+      },
+      {
+        "type": "text",
+        "content": "si je tracte une caravane"
+      },
+      {
+        "type": "text",
+        "content": "s’il souffle de face"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 337,
-    "question": "Sur une voie d’insertion, j’accélère pour :88",
-    "choices": [],
-    "answer": []
+    "question": "Sur une voie d’insertion, j’accélère pour ",
+    "choices": [
+      {
+        "type": "text",
+        "content": "atteindre la vitesse de circulation de la chaussée abordée"
+      },
+      {
+        "type": "text",
+        "content": "M’engager sans ralentir la circulation"
+      },
+      {
+        "type": "text",
+        "content": "M’engager avant les usagers de la route abordée"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 338,
     "question": "Sur une voie d’insertion :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "J’accélère, je mets le clignotant, je me place dans ma voie"
+      },
+      {
+        "type": "text",
+        "content": "J’accélère en contrôlant, je mets le clignotant dès que je peux m’insérer"
+      },
+      {
+        "type": "text",
+        "content": "J’accélère jusqu’au bout de la voie, je contrôle, je m’insère si je peux"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 339,
     "question": "Plus le rayon du virage est faible :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Plus le virage est serré"
+      },
+      {
+        "type": "text",
+        "content": "Plus le virage est large"
+      },
+      {
+        "type": "text",
+        "content": "Plus la force centrifuge est importante"
+      },
+      {
+        "type": "text",
+        "content": "Plus la force centrifuge est faible"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 340,
     "question": "Sur route, lorsque l’accotement de droite n’est pas praticable je peux stationner:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "sur l’accotement de gauche"
+      },
+      {
+        "type": "text",
+        "content": "sur l’accotement de gauche en agglomération"
+      },
+      {
+        "type": "text",
+        "content": "sur la voie de droite"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 341,
     "question": "Lorsque l’arrêt est interdit :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "le stationnement est interdit"
+      },
+      {
+        "type": "text",
+        "content": "le stationnement n’est pas interdit"
+      },
+      {
+        "type": "text",
+        "content": "le stationnement temporaire est interdit"
+      },
+      {
+        "type": "text",
+        "content": "seul le stationnement temporaire est autorisé"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 342,
     "question": "Le contrôle de la durée d’un stationnement payant peut se faire :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "par horodateur"
+      },
+      {
+        "type": "text",
+        "content": "par disque de stationnement"
+      },
+      {
+        "type": "text",
+        "content": "par parcmètre"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 343,
     "question": "On appelle stationnement gênant le fait de stationner :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "dans une voie réservée aux bus"
+      },
+      {
+        "type": "text",
+        "content": "devant une sortie de propriété"
+      },
+      {
+        "type": "text",
+        "content": "sur un pont"
+      },
+      {
+        "type": "text",
+        "content": "à proximité d’une voie ferrée"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 344,
-    "question": "Ajuster sa vitesse aux circonstances, c’est ralentir suffisamment :89",
-    "choices": [],
-    "answer": []
+    "question": "Ajuster sa vitesse aux circonstances, c’est ralentir suffisamment :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "pour ne jamais dépasser la vitesse maximum autorisée"
+      },
+      {
+        "type": "text",
+        "content": "chaque fois que la visibilité est réduite"
+      },
+      {
+        "type": "text",
+        "content": "chaque fois que l’adhérence est réduite"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 345,
     "question": "Pour évaluer l’allure d’un autre usager venant en face, je prends en compte :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "le type de véhicule"
+      },
+      {
+        "type": "text",
+        "content": "la vitesse de rapprochement"
+      },
+      {
+        "type": "text",
+        "content": "l’état du conducteur"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 346,
     "question": "Le temps de réaction est le temps nécessaire au conducteur pour :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "percevoir et réagir"
+      },
+      {
+        "type": "text",
+        "content": "arrêter la voiture"
+      },
+      {
+        "type": "text",
+        "content": "évaluer l’allure d’un autre usager"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 347,
     "question": "Le temps de réaction a une durée d’environ :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "un dixième de seconde"
+      },
+      {
+        "type": "text",
+        "content": "une seconde"
+      },
+      {
+        "type": "text",
+        "content": "dix secondes"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 348,
     "question": "Sur chaussée mouillée ou glissante, il y a augmentation de la distance :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Parcourue pendant le temps de réaction"
+      },
+      {
+        "type": "text",
+        "content": "De freinage"
+      },
+      {
+        "type": "text",
+        "content": "D’arrêt"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 349,
     "question": "A 90 km/h, dans des conditions normales, ma distance d’arrêt est d’environ :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "25 mètres"
+      },
+      {
+        "type": "text",
+        "content": "54 mètres"
+      },
+      {
+        "type": "text",
+        "content": "81 mètres"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 350,
     "question": "La règlementation du stationnement a pour objet :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "La sécurité"
+      },
+      {
+        "type": "text",
+        "content": "La fluidité de la circulation"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 351,
     "question": "Je suis en infraction si je suis en stationnement :",
-    "choices": [],
-    "answer": ["b", "c", "d"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "Dangereux"
+      },
+      {
+        "type": "text",
+        "content": "Abusif"
+      },
+      {
+        "type": "text",
+        "content": "Gênant"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 352,
     "question": "Lorsque je quitte momentanément mon véhicule pour acheter mon journal, je suis considéré comme étant :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "En arrêt"
+      },
+      {
+        "type": "text",
+        "content": "En stationnement"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 353,
     "question": "En général, se ranger en bataille s’effectue :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "En marche avant"
+      },
+      {
+        "type": "text",
+        "content": "En marche arrière"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 354,
     "question": "Pendant la durée de la période probatoire, la vitesse du conducteur sur une autoroute est ordinairement limitée à :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "100 km/h"
+      },
+      {
+        "type": "text",
+        "content": "110 km/h"
+      },
+      {
+        "type": "text",
+        "content": "130 km/h"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 355,
     "question": "En cas de visibilité réduite à 50mètres, la vitesse ne peut excéder :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "90 km/h"
+      },
+      {
+        "type": "text",
+        "content": "60 km/h"
+      },
+      {
+        "type": "text",
+        "content": "50 km/h"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 356,
     "question": "Sur une route de montagne, je stationne de préférence :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "En côte, sur la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "En descente, sur la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "Sur une place d’évitement"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 357,
-    "question": "Un conducteur d’un véhicule qui dér ape doit : 91",
-    "choices": [],
-    "answer": []
+    "question": "Un conducteur d’un véhicule qui dérape doit :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "Freiner fort pour stopper le véhicule"
+      },
+      {
+        "type": "text",
+        "content": "Braquer calmement pour ramener le véhicule sur sa trajectoire"
+      },
+      {
+        "type": "text",
+        "content": "Accélérer franchement pour redonner de l’adhérence aux roues arrière"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 358,
     "question": "Si mes roues mordent sur le bas côté de la route :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Je freine fort et je corrige rapidement ma trajectoire"
+      },
+      {
+        "type": "text",
+        "content": "Je freine légèrement et je reviens progressivement sur la chaussée"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 359,
     "question": "Lorsque je fais remorquer mon véhicule par un autre usager :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "Je ne dois pas dépasser la vitesse de 25 km/h"
+      },
+      {
+        "type": "text",
+        "content": "Je dois signaler mon véhicule à l’aide des feux de détresse"
+      },
+      {
+        "type": "text",
+        "content": "Je reste vigilant"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 360,
@@ -5822,7 +7096,7 @@
         "content": "Serrer ma gauche "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 362,
@@ -5841,7 +7115,7 @@
         "content": "A l’approche d’une intersection "
       }
     ],
-    "answer": []
+    "answer": ["a", "c"]
   },
   {
     "id": 363,
@@ -5864,7 +7138,7 @@
         "content": "A l’approche d’un passage à niveau "
       }
     ],
-    "answer": []
+    "answer": ["b", "d"]
   },
   {
     "id": 364,
@@ -6123,7 +7397,7 @@
         "content": "Terre plein-central, chaussée, trottoirs "
       }
     ],
-    "answer": []
+    "answer": ["c", "d"]
   },
   {
     "id": 377,
@@ -6180,7 +7454,7 @@
         "content": "Une partie de la chaussée réservée pour la circulation dans un sens "
       }
     ],
-    "answer": []
+    "answer": ["b", "c"]
   },
   {
     "id": 380,
@@ -6337,7 +7611,7 @@
         "content": "Aux véhicules prioritaires en mission. "
       }
     ],
-    "answer": []
+    "answer": ["a", "c", "d"]
   },
   {
     "id": 387,
@@ -6365,62 +7639,216 @@
   {
     "id": 388,
     "question": "Quel doit être le comportement d’un conducteur à la sortie d’une autoroute ?",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "réduire sa vitesse"
+      },
+      {
+        "type": "text",
+        "content": "se réadapter à la vitesse normale"
+      },
+      {
+        "type": "text",
+        "content": "tenir compte des intersections et de la présence des autres usagers"
+      },
+      {
+        "type": "text",
+        "content": "utiliser son avertisseur sonore pour dégager la voie"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 389,
     "question": "L’accès à l’autoroute est interdit à certaines catégories d’usagers : lesquels ?",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "piétons"
+      },
+      {
+        "type": "text",
+        "content": "cyclomoteurs"
+      },
+      {
+        "type": "text",
+        "content": "véhicules agricoles"
+      },
+      {
+        "type": "text",
+        "content": "cavaliers"
+      },
+      {
+        "type": "text",
+        "content": "véhicules lents"
+      }
+    ],
+    "answer": ["a", "b", "c", "d", "e"]
   },
   {
     "id": 390,
     "question": "Quels sont les usagers dont l’accès à l’autoroute est interdit ?",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "piétons"
+      },
+      {
+        "type": "text",
+        "content": "motocyclette"
+      },
+      {
+        "type": "text",
+        "content": "cavaliers"
+      },
+      {
+        "type": "text",
+        "content": "véhicules de tourisme"
+      },
+      {
+        "type": "text",
+        "content": "véhicules lents"
+      }
+    ],
+    "answer": ["a", "c", "e"]
   },
   {
     "id": 391,
     "question": "Pour effectuer un changement de voie à droite, je contrôle :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "le rétroviseur droit"
+      },
+      {
+        "type": "text",
+        "content": "le rétroviseur gauche"
+      },
+      {
+        "type": "text",
+        "content": "en vision directe, à droite"
+      },
+      {
+        "type": "text",
+        "content": "le rétroviseur intérieur"
+      }
+    ],
+    "answer": ["a", "d"]
   },
   {
     "id": 392,
     "question": "La circulation est établie en files, je peux changer de voie pour :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "prendre une voie qui circule plus vite"
+      },
+      {
+        "type": "text",
+        "content": "préparer un changement de direction"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 393,
     "question": "Une jonction d’autoroute est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le raccordement de deux autoroutes"
+      },
+      {
+        "type": "text",
+        "content": "La séparation d’une autoroute en deux branches"
+      },
+      {
+        "type": "text",
+        "content": "Le raccordement d’une autoroute et d’une voie d’insertion"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 394,
     "question": "Une autoroute est toujours une route :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "A sens unique"
+      },
+      {
+        "type": "text",
+        "content": "A trois voies de circulation"
+      },
+      {
+        "type": "text",
+        "content": "Interdite aux piétons, cyclistes et cyclomotoristes"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 395,
     "question": "Une voie pour véhicules lents est réservée :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "aux poids-lourds uniquement"
+      },
+      {
+        "type": "text",
+        "content": "aux véhicules dont la vitesse est inférieure à 60km/h"
+      },
+      {
+        "type": "text",
+        "content": "aux véhicules dont la vitesse est inférieure à 80 km/h"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 396,
     "question": "Sur les chaussées d’autoroute à 3 voies, il est permis de dé passer :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Par la droite"
+      },
+      {
+        "type": "text",
+        "content": "Par la gauche"
+      },
+      {
+        "type": "text",
+        "content": "Du côté souhaité"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 397,
     "question": "Les routes à accès règlementé sont toutes :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "A chaussées séparées et à sens unique"
+      },
+      {
+        "type": "text",
+        "content": "A vitesse limité à 110 km/h"
+      },
+      {
+        "type": "text",
+        "content": "A chaussées à double sens"
+      },
+      {
+        "type": "text",
+        "content": "Rien de tout ce qui précède"
+      }
+    ],
+    "answer": ["d"]
   },
   {
     "id": 398,
@@ -6970,7 +8398,7 @@
   },
   {
     "id": 424,
-    "question": "Comment réagir quand le conducteur venant d’en face m’éblouit, malgré mes appels de feu x ?",
+    "question": "Comment réagir quand le conducteur venant d’en face m’éblouit, malgré mes appels de feux ?",
     "choices": [
       {
         "type": "text",
@@ -6989,7 +8417,7 @@
         "content": "je ralentis et je fixe le bord droit de la chaussée "
       }
     ],
-    "answer": []
+    "answer": ["c", "d"]
   },
   {
     "id": 425,
@@ -7088,7 +8516,7 @@
         "content": "les policiers "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 430,
@@ -7111,7 +8539,7 @@
         "content": "je ne lui donne rien "
       }
     ],
-    "answer": []
+    "answer": ["d"]
   },
   {
     "id": 431,
@@ -7130,7 +8558,7 @@
         "content": "L’asphyxie "
       }
     ],
-    "answer": []
+    "answer": ["a", "c"]
   },
   {
     "id": 432,
@@ -7157,7 +8585,7 @@
         "content": "en appuyant sur les points de compression "
       }
     ],
-    "answer": []
+    "answer": ["c", "d", "e"]
   },
   {
     "id": 433,
@@ -7176,7 +8604,7 @@
         "content": "Par le mouvement du ventre et de la poitrine "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 434,
@@ -7203,7 +8631,7 @@
         "content": "en lui donnant à boire "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 435,
@@ -7222,7 +8650,7 @@
         "content": "Douleur, gonflement, mouvements possibles "
       }
     ],
-    "answer": []
+    "answer": ["c"]
   },
   {
     "id": 436,
@@ -7241,7 +8669,7 @@
         "content": "Le passage du sang dans le cœur "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 437,
@@ -7283,7 +8711,7 @@
         "content": "A l’intérieur des vaisseaux "
       }
     ],
-    "answer": []
+    "answer": ["b"]
   },
   {
     "id": 439,
@@ -7622,7 +9050,7 @@
         "content": "si je cède le passage à un usager circulant sur l’axe principal "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 456,
@@ -7641,7 +9069,7 @@
         "content": "avec l’aide d’un autre usager "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 457,
@@ -7660,7 +9088,7 @@
         "content": "je règle les rétroviseurs puis le siège et je mets la ceinture "
       }
     ],
-    "answer": []
+    "answer": ["b"]
   },
   {
     "id": 458,
@@ -7683,7 +9111,7 @@
         "content": "100km/h "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 459,
@@ -7859,7 +9287,7 @@
         "content": "ignoré l’injonction d’un agent de force réglementant la circulation "
       }
     ],
-    "answer": []
+    "answer": ["a", "b"]
   },
   {
     "id": 467,
@@ -7924,7 +9352,7 @@
         "content": "rester calme et courtois "
       }
     ],
-    "answer": []
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 470,
@@ -7952,38 +9380,136 @@
   {
     "id": 471,
     "question": "Quels sont les signes évidents de la fatigue ?",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "bâillement"
+      },
+      {
+        "type": "text",
+        "content": "picotement des yeux"
+      },
+      {
+        "type": "text",
+        "content": "somnolence"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 472,
     "question": "Quels sont les effets de la fatigue ?",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "réaction tardive"
+      },
+      {
+        "type": "text",
+        "content": "mauvaise analyse"
+      },
+      {
+        "type": "text",
+        "content": "mauvaise appréciation des vitesses"
+      },
+      {
+        "type": "text",
+        "content": "l’impatience ou anxiété grandissante"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 473,
     "question": "Comment limiter la fatigue ?",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "conduire sur une longue durée sans repos"
+      },
+      {
+        "type": "text",
+        "content": "pendant le trajet se reposer régulièrement"
+      },
+      {
+        "type": "text",
+        "content": "pratiquer l’alternance au volant"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 474,
     "question": "Quels sont les conditions nécessaires pour un déplacement sûr ?",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "être en forme pour conduire"
+      },
+      {
+        "type": "text",
+        "content": "avoir un véhicule en bon état de fonctionnement"
+      },
+      {
+        "type": "text",
+        "content": "anticiper les situations critiques"
+      },
+      {
+        "type": "text",
+        "content": "être courtois avec les autres usagers"
+      }
+    ],
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 475,
     "question": "Quel comportement adopter pour une conduite économique ?",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "choisir un bon style de conduite"
+      },
+      {
+        "type": "text",
+        "content": "bien régler son moteur"
+      },
+      {
+        "type": "text",
+        "content": "bon gonflage des pneus"
+      },
+      {
+        "type": "text",
+        "content": "aérodynamisme bien adapté"
+      }
+    ],
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 476,
     "question": "Quel doit être le comporte ment d’un conducteur impliqué dans un accident de circulation ?",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "s’arrêter après marquage"
+      },
+      {
+        "type": "text",
+        "content": "dégager la chaussée pour ne pas gêner la circulation"
+      },
+      {
+        "type": "text",
+        "content": "avertir sa compagnie d’assurance"
+      },
+      {
+        "type": "text",
+        "content": "communiquer son identité et son adresse à toute personne impliquée dans l’accident"
+      },
+      {
+        "type": "text",
+        "content": "conduire le véhicule au poste de police le plus proche"
+      }
+    ],
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 477,
@@ -8006,277 +9532,885 @@
         "content": "Augmente le champ de vision "
       }
     ],
-    "answer": ["a"]
+    "answer": ["a", "b"]
   },
   {
     "id": 478,
     "question": "J’ai plus de risque de rencontrer du verglas si je circule :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "en lisière d’une forêt"
+      },
+      {
+        "type": "text",
+        "content": "le long d’un cours d’eau"
+      },
+      {
+        "type": "text",
+        "content": "à allure soutenue"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 479,
     "question": "Pour stationner de nuit dans une rue non éclairée en agglomération, j’allume :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Mes feux de croisement"
+      },
+      {
+        "type": "text",
+        "content": "Mes feux de position"
+      },
+      {
+        "type": "text",
+        "content": "Aucun feu pour ne pas décharger ma batterie"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 480,
     "question": "L’absorption d’alcool entraine une réduction :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Du champ visuel"
+      },
+      {
+        "type": "text",
+        "content": "Des capacités d’analyse"
+      },
+      {
+        "type": "text",
+        "content": "Du temps de réaction"
+      },
+      {
+        "type": "text",
+        "content": "Des habiletés motrices"
+      }
+    ],
+    "answer": ["a", "b", "c", "d"]
   },
   {
     "id": 481,
     "question": "Les effets de l’alcool apparaissent à partir de :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "0,3g/l de sang"
+      },
+      {
+        "type": "text",
+        "content": "0,5g/l de sang"
+      },
+      {
+        "type": "text",
+        "content": "1,2g/l de sang"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 482,
     "question": "Conduire avec une alcoolémie de 0,5g/l de sang multiplie le risque d’avoir un accident mortel :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "par dix"
+      },
+      {
+        "type": "text",
+        "content": "par cinq"
+      },
+      {
+        "type": "text",
+        "content": "par deux"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 483,
     "question": "Pour faire redescendre à 0,5g/l, un taux d’alcoolémie de 0,8g/l de sang, il faut en moyenne :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "1 heure"
+      },
+      {
+        "type": "text",
+        "content": "2 heures"
+      },
+      {
+        "type": "text",
+        "content": "3 heures"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 484,
     "question": "L’association alcool et médicaments peut augmenter :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le taux d’alcoolémie"
+      },
+      {
+        "type": "text",
+        "content": "Les effets de l’alcool"
+      },
+      {
+        "type": "text",
+        "content": "Le temps de réaction"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 485,
     "question": "L’alcoolémie atteint son maximum :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Immédiatement après absorption"
+      },
+      {
+        "type": "text",
+        "content": "Entre demi-heure et une heure après absorption"
+      },
+      {
+        "type": "text",
+        "content": "Après deux heures"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 486,
     "question": "La mesure exacte du taux d’alcoolémie est effectuée si :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le dépistage est positif"
+      },
+      {
+        "type": "text",
+        "content": "Le conducteur refuse le dépistage"
+      },
+      {
+        "type": "text",
+        "content": "Le dépistage est négatif"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 487,
     "question": "Le contrôle d’alcoolémie est systématique :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Si l’on est impliqué dans un accident corporel"
+      },
+      {
+        "type": "text",
+        "content": "Lors des contrôles routiers"
+      },
+      {
+        "type": "text",
+        "content": "Lors d’un accident"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 488,
     "question": "Les conditions qui augmentent la fatigue sont :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Le manque de sommeil"
+      },
+      {
+        "type": "text",
+        "content": "La visibilité réduite"
+      },
+      {
+        "type": "text",
+        "content": "Une circulation fluide"
+      },
+      {
+        "type": "text",
+        "content": "La conduite de nuit"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 489,
     "question": "Pour retarder l’apparition de la fatigue, il faut :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Boire beaucoup de café"
+      },
+      {
+        "type": "text",
+        "content": "Etre bien installé au volant"
+      },
+      {
+        "type": "text",
+        "content": "Prendre la route après un bon repos"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 490,
     "question": "En cas de fatigue, il faut :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Marquer une pause"
+      },
+      {
+        "type": "text",
+        "content": "Rouler plus lentement"
+      },
+      {
+        "type": "text",
+        "content": "Rouler plus vite pour maintenir la vigilance"
+      },
+      {
+        "type": "text",
+        "content": "Passer le volant à un passager"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 491,
     "question": "Lors d’un accident, s’il y a risque d’incendie :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Je débranche la batterie des véhicules"
+      },
+      {
+        "type": "text",
+        "content": "Je maintien le contact des véhicules"
+      },
+      {
+        "type": "text",
+        "content": "Je coupe le contact des véhicules"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 492,
     "question": "De nuit pour signaler un accident :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "J’utilise les feux de mon véhicule"
+      },
+      {
+        "type": "text",
+        "content": "Je fais des signes avec une lampe de poche"
+      },
+      {
+        "type": "text",
+        "content": "Je place mes triangles de pré signalisation"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 493,
     "question": "Lors d’un accident le règlement à l’amiable est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "Obligatoire"
+      },
+      {
+        "type": "text",
+        "content": "Facultatif"
+      },
+      {
+        "type": "text",
+        "content": "Recommandé"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 494,
     "question": "L’assurance minimum obligatoire :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "couvre les dommages occasionnés aux autres"
+      },
+      {
+        "type": "text",
+        "content": "couvre les dégâts occasionnés aux véhicules seulement"
+      },
+      {
+        "type": "text",
+        "content": "est aussi appelée assurance au x tiers"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 495,
     "question": "Si je suis témoin d’un accident, je dois :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "exposer ce que j’ai vu aux forces de l’ordre"
+      },
+      {
+        "type": "text",
+        "content": "remplir le contrat amiable"
+      },
+      {
+        "type": "text",
+        "content": "déterminer les responsabilités"
+      },
+      {
+        "type": "text",
+        "content": "laisser mes coordonnées pour un témoignage ultérieur"
+      }
+    ],
+    "answer": ["a", "d"]
   },
   {
     "id": 496,
     "question": "En présence de blessés après un accident il faut :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "les couvrir"
+      },
+      {
+        "type": "text",
+        "content": "pratiquer les gestes qui sauvent"
+      },
+      {
+        "type": "text",
+        "content": "les faire boire pour éviter qu’ils ne se déshydratent"
+      },
+      {
+        "type": "text",
+        "content": "les transporter sur l’accotement"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 497,
     "question": "Lors de l’alerte des secours, j’indique :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "le lieu précis de l’accident"
+      },
+      {
+        "type": "text",
+        "content": "le numéro d’immatriculation des véhicules impliqués"
+      },
+      {
+        "type": "text",
+        "content": "le nombre et le type de véhicules impliqués"
+      },
+      {
+        "type": "text",
+        "content": "le nombre et l’état des blessés"
+      }
+    ],
+    "answer": ["a", "c", "d"]
   },
   {
     "id": 498,
     "question": "Protéger les lieux d’un accident, c’est :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "baliser les lieux pour éviter un autre accident"
+      },
+      {
+        "type": "text",
+        "content": "dégager complètement la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "barrer complètement la voie aux autres véhicules"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 499,
     "question": "Après avoir déplacé un blessé, je le mets allongé sur:",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "le coté"
+      },
+      {
+        "type": "text",
+        "content": "le dos"
+      },
+      {
+        "type": "text",
+        "content": "le ventre"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 500,
     "question": "Si mon véhicule est immobilisé dangereusement sur la chaussée, je le déplace de préférence :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "en le poussant"
+      },
+      {
+        "type": "text",
+        "content": "en enclenchant la 1ère ou la marche en arrière et en actionnant le démarreur"
+      },
+      {
+        "type": "text",
+        "content": "en faisant appel à des secours"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 501,
-    "question": "La pré sence à bord d’une boîte d’ampoule et de fusible de recharge est :",
-    "choices": [],
-    "answer": []
+    "question": "La présence à bord d’une boîte d’ampoule et de fusible de recharge est :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "obligatoire"
+      },
+      {
+        "type": "text",
+        "content": "recommandée"
+      },
+      {
+        "type": "text",
+        "content": "inutile"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 502,
     "question": "Le réglage de la hauteur des faisceaux lumineux du véhicule :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "dépend de la charge du véhicule"
+      },
+      {
+        "type": "text",
+        "content": "nécessite toujours l’intervention d’un spécialiste"
+      },
+      {
+        "type": "text",
+        "content": "est effectué une fois pour toutes lors de la mise en circulation"
+      }
+    ],
+    "answer": ["a"]
   },
   {
     "id": 503,
     "question": "Pour remplir le réservoir de mon lave glace, j’utilise de préférence :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "de l’eau uniquement"
+      },
+      {
+        "type": "text",
+        "content": "un produit détergent spécial"
+      },
+      {
+        "type": "text",
+        "content": "un détergent ménager"
+      }
+    ],
+    "answer": ["b"]
   },
   {
     "id": 504,
     "question": "Je dois faire vérifier l’équilibrage des roues de mon véhicule :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "après un choc violent contre un trottoir"
+      },
+      {
+        "type": "text",
+        "content": "en cas d’usure anormale de mes pneus"
+      },
+      {
+        "type": "text",
+        "content": "je ressens des vibrations au niveau du volant"
+      },
+      {
+        "type": "text",
+        "content": "si mon véhicule se déporte au freinage"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 505,
     "question": "Parmi ces équipements, ceux qui déchargent le plus la batterie sont :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "l’autoradio"
+      },
+      {
+        "type": "text",
+        "content": "les feux"
+      },
+      {
+        "type": "text",
+        "content": "le système dégivrage de la lunette arrière"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 506,
     "question": "Je dois faire vérifier le parallélisme des roues de mon véhicule :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "après un choc violent"
+      },
+      {
+        "type": "text",
+        "content": "en cas d’usure de mes pneus"
+      },
+      {
+        "type": "text",
+        "content": "si je ressens des vibrations au niveau du volant"
+      },
+      {
+        "type": "text",
+        "content": "si mon véhicule se déporte"
+      }
+    ],
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 507,
     "question": "L’installation au poste de conduite influence :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "la vision"
+      },
+      {
+        "type": "text",
+        "content": "le confort"
+      },
+      {
+        "type": "text",
+        "content": "la tenue de route"
+      },
+      {
+        "type": "text",
+        "content": "la manipulation des commandes"
+      }
+    ],
+    "answer": ["a", "b", "d"]
   },
   {
     "id": 508,
-    "question": "Il est indispensable de regarder dans ses rétroviseurs avant de : 124",
-    "choices": [],
-    "answer": []
+    "question": "Il est indispensable de regarder dans ses rétroviseurs avant de :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "modifier sa trajectoire"
+      },
+      {
+        "type": "text",
+        "content": "activer ses clignotants"
+      },
+      {
+        "type": "text",
+        "content": "modifier son allure"
+      }
+    ],
+    "answer": ["a", "b", "c"]
   },
   {
     "id": 509,
     "question": "Les appels lumineux servent à signaler :",
-    "choices": [],
-    "answer": ["a"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "une intention de dépasser"
+      },
+      {
+        "type": "text",
+        "content": "la présence de gendarmes"
+      },
+      {
+        "type": "text",
+        "content": "l’approche à une intersection la nuit"
+      }
+    ],
+    "answer": ["a", "c"]
   },
   {
     "id": 510,
     "question": "Je peux utiliser l’avertisseur sonore pour :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "avertir de ma présence un usager qui ne me regarde pas"
+      },
+      {
+        "type": "text",
+        "content": "signaler à un usager qu’il vient de commettre une faute"
+      },
+      {
+        "type": "text",
+        "content": "Passer lorsque j’ai la priorité"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 511,
     "question": "L’usage de l’avertisseur sonore est interdit :",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "la nuit, uniquement en agglomération"
+      },
+      {
+        "type": "text",
+        "content": "la nuit, en agglomération et hors agglomération"
+      },
+      {
+        "type": "text",
+        "content": "le jour en agglomération sauf danger immédiat"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 512,
     "question": "Avant de monter abord ou de descendre de mon véhicule je dois :",
-    "choices": [],
-    "answer": ["b"]
+    "choices": [
+      {
+        "type": "text",
+        "content": "m’assurer qu’il n’y aucun risque"
+      },
+      {
+        "type": "text",
+        "content": "contrôler que ma position ne gêne d’autres usagers"
+      },
+      {
+        "type": "text",
+        "content": "tenir compte les mouvements des autres usagers"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 513,
     "question": "Lorsque la visibilité est réduite :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "je ralentis pour pouvoir m’arrêter le cas échéant"
+      },
+      {
+        "type": "text",
+        "content": "je ne ralentis pas car cela n’améliore pas la visibilité"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 514,
     "question": "Lors d’un départ en cote, il faut desserrer le frein à main :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "avant de commencer à embrayer"
+      },
+      {
+        "type": "text",
+        "content": "dès que l’on a trouvé le point de patinage"
+      },
+      {
+        "type": "text",
+        "content": "dès que l’on a fini d’embrayer"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 515,
-    "question": "Lors d’un arrêt en circulation, pour éviter de caler le moteur il fau t :",
-    "choices": [],
+    "question": "Lors d’un arrêt en circulation, pour éviter de caler le moteur il faut :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "débrayer dès le début du freinage"
+      },
+      {
+        "type": "text",
+        "content": "débrayer en fin de freinage seulement"
+      },
+      {
+        "type": "text",
+        "content": "débrayer avant de freiner"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 516,
     "question": "Les mains sur le volant sont placées correctement sur le dessin :",
     "choices": [],
-    "answer": ["b"]
+    "answer": []
   },
   {
     "id": 517,
     "question": "La rétrogradation permet :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "de ralentir le véhicule dans une descente"
+      },
+      {
+        "type": "text",
+        "content": "de répartir après un ralentissement"
+      },
+      {
+        "type": "text",
+        "content": "d’arrêter le véhicule en circulation"
+      }
+    ],
     "answer": ["b"]
   },
   {
     "id": 518,
     "question": "Le frein moteur intervient dès qu’on :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "lâche l’accélérateur"
+      },
+      {
+        "type": "text",
+        "content": "appuie sur la pédale de frein"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 519,
     "question": "A bord d’un véhicule de tourisme, pour effectuer une marche arrière, j’aurai une meilleure vision :",
-    "choices": [],
+    "choices": [
+      {
+        "type": "text",
+        "content": "si je me retourne bien"
+      },
+      {
+        "type": "text",
+        "content": "si je me retourne peu"
+      },
+      {
+        "type": "text",
+        "content": "si j’utilise mes 3 rétroviseurs"
+      }
+    ],
     "answer": ["a"]
   },
   {
     "id": 520,
-    "question": "Il est dangereux d’effectu er un demi-tour :",
-    "choices": [],
-    "answer": []
+    "question": "Il est dangereux d’effectuer un demi-tour :",
+    "choices": [
+      {
+        "type": "text",
+        "content": "dans un virage"
+      },
+      {
+        "type": "text",
+        "content": "lorsque la circulation est dense et rapide"
+      },
+      {
+        "type": "text",
+        "content": "dans une rue sans issue"
+      }
+    ],
+    "answer": ["a", "b"]
   },
   {
     "id": 521,
     "question": "La fatigue et la perte de vigilance sont accrues par :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "une vitesse modérée"
+      },
+      {
+        "type": "text",
+        "content": "la conduite de nuit"
+      },
+      {
+        "type": "text",
+        "content": "une dette de sommeil"
+      },
+      {
+        "type": "text",
+        "content": "la prise de caféine"
+      }
+    ],
+    "answer": ["b", "c"]
   },
   {
     "id": 522,
     "question": "Au volant de mon véhicule, mon téléphone portable sonne :",
-    "choices": [],
-    "answer": []
+    "choices": [
+      {
+        "type": "text",
+        "content": "lorsque je me retrouve seul sur la chaussée"
+      },
+      {
+        "type": "text",
+        "content": "lorsque je ne suis pas sur une route à grande circulation"
+      },
+      {
+        "type": "text",
+        "content": "lorsque je suis équipé d’un kit oreillette en cas d’urgence"
+      },
+      {
+        "type": "text",
+        "content": "lorsqu’il y a urgence"
+      }
+    ],
+    "answer": ["c"]
   },
   {
     "id": 523,
@@ -9746,7 +11880,7 @@
         "content": "3,5m "
       }
     ],
-    "answer": []
+    "answer": ["a"]
   },
   {
     "id": 593,
@@ -10517,7 +12651,7 @@
         "content": "Transport de passagers assis sur une longue distance "
       }
     ],
-    "answer": []
+    "answer": ["a", "e"]
   },
   {
     "id": 630,
