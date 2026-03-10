@@ -1,6 +1,7 @@
 export interface Choice {
-  type: string;
+  type: 'text' | 'image';
   content: string;
+  image?: string | null;
 }
 
 export interface Question {
@@ -8,4 +9,6 @@ export interface Question {
   question: string;
   choices: Choice[];
   answer: string[];
+  contextImages?: string[];
+  page?: number;
 }
