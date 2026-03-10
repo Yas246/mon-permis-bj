@@ -1,36 +1,258 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PermiX
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![PermiX](public/icons/icon-192x192.png)
+
+**Application d'apprentissage du Code de la Route au Bénin**
+
+[![Next.js](https://img.shields.io/badge/Next.js-14.1.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+</div>
+
+---
+
+## 📋 Table des matières
+
+- [🎯 À propos](#-à-propos)
+- [✨ Fonctionnalités](#-fonctionnalités)
+- [🛠️ Stack Technique](#️-stack-technique)
+- [🚀 Installation](️-installation)
+- [💻 Scripts Disponibles](-scripts-disponibles)
+- [📁 Structure du Projet](-structure-du-projet)
+- [📊 Données et Traitement](-données-et-traitement)
+- [🌐 Déploiement](-déploiement)
+- [🤝 Contribuer](-contribuer)
+
+---
+
+## 🎯 À propos
+
+**PermiX** est une Progressive Web Application (PWA) complète pour l'apprentissage du Code de la Route au Bénin. Elle permet aux candidats au permis de conduire de se préparer efficacement grâce à différents modes d'apprentissage interactifs.
+
+L'application contient **641 questions** extraites du manuel officiel, avec support d'images et feedback immédiat pour optimiser l'apprentissage.
+
+---
+
+## ✨ Fonctionnalités
+
+### 📚 Modes d'Apprentissage
+
+| Mode            | Description                                                              |
+| --------------- | ------------------------------------------------------------------------ |
+| **📖 Révision** | Apprenez à votre rythme avec correction immédiate et mode d'entraînement |
+| **📝 Examen**   | Simulez les conditions réelles d'examen (15 secondes par question)       |
+| **📋 Sommaire** | Accédez à toutes les questions pour une révision ciblée                  |
+
+### 🎨 Interface Utilisateur
+
+- 🌓 **Thème Clair/Sombre** avec détection automatique des préférences système
+- 📱 **Design Responsive** optimisé pour mobile et desktop
+- 🎭 **Animations Fluides** avec GSAP pour une expérience utilisateur agréable
+- 🖼️ **Support d'Images** pour les questions illustrées
+
+### 💾 Fonctionnalités PWA
+
+- 📲 **Installation** Ajoutez l'app à votre écran d'accueil
+- 🔄 **Mode Hors Ligne** Fonctionne sans connexion internet
+- 📊 **Persistance des Données** Sauvegarde automatique de la progression
+
+### 📈 Suivi de Progression
+
+- ✅ **Progression en Mode Révision** Reprenez où vous vous êtes arrêté
+- 📊 **Historique des Examens** Consultez vos résultats passés avec détails
+- 🎯 **Statistiques Détaillées** Analyse performance par question
+
+---
+
+## 🛠️ Stack Technique
+
+### Frontend
+
+- **Framework** : [Next.js 14](https://nextjs.org/) avec App Router
+- **Langage** : [TypeScript 5](https://www.typescriptlang.org/)
+- **UI** : [React 18](https://react.dev/)
+- **Styling** : [Tailwind CSS 3](https://tailwindcss.com/)
+- **Animations** : [GSAP 3](https://greensock.com/gsap/)
+- **PWA** : [Next-PWA](https://github.com/DuCanhGH/next-pwa/)
+
+### Backend & Build
+
+- **Runtime** : Node.js
+- **Package Manager** : npm
+- **Image Processing** : Sharp
+
+---
+
+## 🚀 Installation
+
+### Prérequis
+
+- Node.js 18+ et npm
+- Python 3.x (pour le traitement des données uniquement)
+
+### Étapes
 
 ```bash
+# Cloner le repository
+git clone https://github.com/votre-username/mon-permis-bj.git
+cd mon-permis-bj
+
+# Installer les dépendances
+npm install
+
+# Lancer en développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application sera disponible sur [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Scripts Disponibles
 
-## Learn More
+```bash
+# Développement
+npm run dev          # Lance le serveur de développement
 
-To learn more about Next.js, take a look at the following resources:
+# Production
+npm run build        # Crée un build de production
+npm start            # Lance le serveur de production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# PWA
+npm run generate-sw  # Génère le service worker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Outils
+npm run generate-icons  # Génère les icônes de l'application
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure du Projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+mon-permis-bj/
+├── public/                    # Assets statiques
+│   ├── icons/                # Icônes PWA
+│   ├── manifest.json         # Manifest PWA
+│   ├── sw.js                 # Service Worker généré
+│   └── questions_reponses.json # Base de données questions
+│
+├── src/
+│   ├── app/                  # Pages Next.js (App Router)
+│   │   ├── layout.tsx       # Layout racine + métadonnées PWA
+│   │   ├── page.tsx         # Page d'accueil
+│   │   ├── revision/        # Mode révision
+│   │   ├── examen/          # Mode examen
+│   │   ├── historique/      # Historique des examens
+│   │   └── sommaire/        # Sommaire des questions
+│   │
+│   ├── components/          # Composants React
+│   │   ├── QuestionCard.tsx    # Affichage question
+│   │   ├── ExamConfig.tsx      # Configuration examen
+│   │   ├── ExamSummary.tsx     # Résultats examen
+│   │   ├── Navbar.tsx          # Barre de navigation
+│   │   ├── Layout.tsx          # Layout principal
+│   │   └── ClientLayout.tsx    # Wrapper client-side
+│   │
+│   ├── context/             # Contextes React
+│   │   └── ThemeContext.tsx  # Gestion du thème
+│   │
+│   ├── types/               # Types TypeScript
+│   │   ├── Question.ts      # Interface question
+│   │   └── ExamResult.ts    # Interface résultat
+│   │
+│   ├── utils/               # Utilitaires
+│   │   ├── storage.ts       # Gestion localStorage
+│   │   └── examUtils.ts     # Fonctions utilitaires examen
+│   │
+│   └── styles/              # Styles globaux
+│       └── globals.css      # CSS global + Tailwind
+│
+|
+│
+├── next.config.js          # Configuration Next.js + PWA
+├── tailwind.config.js      # Configuration Tailwind
+├── tsconfig.json           # Configuration TypeScript
+└── package.json            # Dépendances et scripts
+```
+
+---
+
+## 📊 Données et Traitement
+
+### Source des Données
+
+Les questions sont extraites du **Manuel Officiel du Code de la Route au Bénin**.
+
+### Processus d'Extraction
+
+```
+PDF Manuel → Extraction PyMuPDF → Reconnaissance Patterns → Extraction Images
+→ Nettoyage Données → Fusion & Dédoublonnage → Contrôle Qualité → JSON Final
+```
+
+### Fichiers de Données
+
+| Fichier                   | Description                                |
+| ------------------------- | ------------------------------------------ |
+| `questions_reponses.json` | Base de données principale (641 questions) |
+
+---
+
+## 🌐 Déploiement
+
+### Build de Production
+
+```bash
+# Créer le build optimisé
+npm run build
+
+# Tester en local
+npm start
+```
+
+### Plateformes Recommandées
+
+- **Vercel** (recommandé pour Next.js)
+- **Netlify**
+- **Railway**
+- **Tout hébergeur Node.js**
+
+### Variables d'Environnement
+
+Aucune variable d'environnement requise pour le fonctionnement de base.
+
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! Voici comment vous pouvez aider :
+
+1. **Corriger des questions** : Éditez `questions_reponses.json`
+2. **Améliorer l'UI** : Modifiez les composants dans `src/components/`
+3. **Ajouter des fonctionnalités** : Créez des pull requests
+4. **Signaler des bugs** : Ouvrez une issue
+
+### Convention de Code
+
+- Utilisez TypeScript pour tout nouveau code
+- Suivez le style existant (ESLint/Prettier)
+- Ajoutez des commentaires pour les fonctions complexes
+- Testez en développement avant de commit
+
+---
+
+## 📝 Licence
+
+Ce projet est créé pour aider les candidats au permis de conduire au Bénin.
+
+---
+
+<div align="center">
+
+**Bon courage pour votre examen ! 🚗**
+
+</div>
