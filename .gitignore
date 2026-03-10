@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+permis.ipynb
+.vscode/settings.json
+extract_questions.py
+extract_questions_with_images.py
+extraction_report.json
+manuel2.pdf
+merge_questions.py
+questions_extracted.json
+questions_final.json
+questions_merged.json
+questions_reponses.json.backup
+questions_to_review.json

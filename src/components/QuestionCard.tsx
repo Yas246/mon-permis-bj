@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { Question } from "../types/Question";
@@ -107,6 +108,23 @@ export default function QuestionCard({
         </div>
       )}
 
+      {question.contextImages && question.contextImages.length > 0 && (
+        <div className="mb-4 flex justify-center gap-3 flex-wrap">
+          {question.contextImages.map((img, idx) => (
+            <div key={idx} className="relative">
+              <Image
+                src={img}
+                alt={`Image pour la question ${question.id}`}
+                width={250}
+                height={250}
+                className="rounded-lg shadow-md object-contain bg-white"
+                style={{ maxHeight: '250px' }}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
       <h2 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
         {question.question}
       </h2>
@@ -137,7 +155,19 @@ export default function QuestionCard({
                 <span className="flex items-center justify-center w-6 h-6 text-sm font-semibold rounded-full bg-gray-200 dark:bg-gray-600 shrink-0">
                   {letterIndex.toUpperCase()}
                 </span>
-                <span className="text-sm sm:text-base">{choice.content}</span>
+                {choice.type === 'image' && choice.image ? (
+                  <div className="flex-1 flex justify-center">
+                    <Image
+                      src={choice.image}
+                      alt={`Choix ${letterIndex.toUpperCase()}`}
+                      width={300}
+                      height={200}
+                      className="rounded-lg object-contain max-h-32"
+                    />
+                  </div>
+                ) : (
+                  <span className="text-sm sm:text-base flex-1">{choice.content}</span>
+                )}
               </div>
             </button>
           );
